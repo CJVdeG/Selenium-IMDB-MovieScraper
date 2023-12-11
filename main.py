@@ -88,7 +88,7 @@ print(f'↓↓↓ ... Scraping the results page ... ↓↓↓ \n {results_url}')
 # TODO: Scrape the results page with Selenium
 # Get all the movie titles
 movie_titles = [title.text.split('. ')[1] for title in driver.find_elements(By.CSS_SELECTOR, 'a .ipc-title__text')]
-print(movie_titles)
+# print(movie_titles)
 print(f'Found {len(movie_titles)} movie titles...')
 
 # Get all the movie descriptions
